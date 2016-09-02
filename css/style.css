@@ -1,0 +1,39 @@
+.title {
+	margin-top:100px;
+}
+
+hr.abovemenu {
+	margin-bottom:1rem;
+}
+
+hr.belowmenu {
+	margin-top:1rem;
+}
+
+/* MENU */
+.menu {
+	text-align: center;
+}
+
+hr.abovemenu {
+	margin-bottom:1rem;
+}
+
+hr.belowmenu {
+	margin-top:1rem;
+}
+
+.menu a {
+	text-decoration: none;
+	color:#000;
+	font-size:1.8em;
+	text-transform: uppercase;
+}
+
+.menu a.active {
+	border-bottom:1px solid black;
+}
+
+.menu a:hover {
+	color:#555;
+}
