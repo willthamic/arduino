@@ -15,16 +15,16 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="css/fonts.css" rel="stylesheet" type="text/css">
+  <link href="../css/fonts.css" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
 
 </head>
 <body>
@@ -41,25 +41,23 @@
             see the onboard led blink on or off. 
         </h4>
         <h5>Instructions:  Run the code on the arduino<h5>
-      <pre>  <code>
+        <pre>  
+          <code>
+            // the setup function runs once when you press reset or power the board 
+            void setup() {
+              // initialize digital pin LED_BUILTIN as an output.
+              pinMode(13, OUTPUT);
+            }
 
-// the setup function runs once when you press reset or power the board 
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(13, OUTPUT);
-}
-
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level) 
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
-      </code>  </pre>
-
-
-
+            // the loop function runs over and over again forever
+            void loop() {
+              digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level) 
+              delay(1000);                       // wait for a second
+              digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+              delay(1000);                       // wait for a second
+            }
+          </code>
+        </pre>
       </div>
     </div>
   </div>
