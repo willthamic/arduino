@@ -37,3 +37,22 @@ hr.belowmenu {
 .menu a:hover {
 	color:#555;
 }
+
+/* ITEMS */
+.item a {
+	text-decoration: none;
+	color:black;
+}
+
+.item:hover a h5 {
+	color:#1EAEDB;
+}
+
+.item img {
+	margin:-1px;
+	border: 1px solid transparent;
+}
+
+.item:hover img {
+	border: 1px solid #1EAEDB;
+}
