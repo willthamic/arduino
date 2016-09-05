@@ -1,3 +1,7 @@
+a {
+	text-decoration: none;
+}
+
 .title {
 	margin-top:100px;
 }
@@ -8,6 +12,10 @@ hr.abovemenu {
 
 hr.belowmenu {
 	margin-top:1rem;
+}
+
+.container {
+	margin-bottom:50px;
 }
 
 /* MENU */
@@ -66,4 +74,20 @@ hr.belowmenu {
     font-size: 1.4rem;
     letter-spacing: .2rem;
     font-weight: 600;
+}
+
+/* DOWNLOAD */
+.download {
+	background-color:#E0E0E0;
+	border-radius:5px;
+	padding:15px;
+	display:inline-flex;
+	justify-content:center;
+}
+
+.download p {
+	text-decoration: none;
+	color: #5F5F5F;
+	display:inline-block;
+	margin:0;
 }
