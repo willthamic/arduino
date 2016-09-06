@@ -91,3 +91,13 @@ hr.belowmenu {
 	display:inline-block;
 	margin:0;
 }
+
+/* FOOTER */
+.footer a {
+	color: black;
+	margin:0 10px;
+}
+
+.footer {
+	text-align:center;
+}
