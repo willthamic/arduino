@@ -1,193 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Resistors</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+	<!-- Basic Page Needs
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Resistors</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+	<!-- FONT
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="../css/fonts.css" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/skeleton.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../images/favicon.png">
+	<!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="../images/favicon.png">
 
 </head>
+
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-        <h2 class="title">Arduino Examples</h2>
-        <hr class="abovemenu">
-        <div class="row menu" style="text-align:left;">
-          <a href="../intro.html">Intro</a> > Resistors
-        </div>
-        <hr class="belowmenu">
-    </div>
-    <div class="row">
-	<h3>Intro to Resistors</h3>
-
-	<h6 class="text-header">Description</h6>
-	<p>
-		Resistors are an element of a circuit that limits the current that passes through it. They are typically used to make sure that electronic components, such as LED's, don't break due to too much current or voltage. It may be hard to see that resistors are necessary with simple circuits, such as just one LED, but even in this case without the proper resistor the LED can overheat and stop working. The resistance of a resistor is measured in Ohms (Ω) and can be found using the table and diagram below.
-	</p>
-
-	<h6 class="text-header">Resistor Color Diagram</h6>
-	<img class="u-max-full-width" src="assets/resistor-diagram.png" style="margin-bottom:10px;"></img>
-
-	<h6 class="text-header">Resistor Color Table</h6>
-	<table class="u-full-width">
-		<thead>
-			<tr>
-				<th>Color</th>
-				<th>1st Digit</th>
-				<th>2nd Digit</th>
-				<th>Multiplier</th>
-				<th>Tolerance</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td style="font-weight:bold; color:black;">Black</td>
-				<td>0</td>
-				<td>0</td>
-				<td>10<sup>0</sup></td>
-				<td>-</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold; color:brown;">Brown</td>
-				<td>1</td>
-				<td>1</td>
-				<td>10<sup>1</sup></td>
-				<td>-</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold; color:red;">Red</td>
-				<td>2</td>
-				<td>2</td>
-				<td>10<sup>2</sup></td>
-				<td>-</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold; color:orange;">Orange</td>
-				<td>3</td>
-				<td>3</td>
-				<td>10<sup>3</sup></td>
-				<td>-</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold; color:yellow;">Yellow</td>
-				<td>4</td>
-				<td>4</td>
-				<td>10<sup>4</sup></td>
-				<td>-</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold; color:green;">Green</td>
-				<td>5</td>
-				<td>5</td>
-				<td>10<sup>5</sup></td>
-				<td>-</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold; color:blue;">Blue</td>
-				<td>6</td>
-				<td>6</td>
-				<td>10<sup>6</sup></td>
-				<td>-</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold; color:violet;">Violet</td>
-				<td>7</td>
-				<td>7</td>
-				<td>10<sup>7</sup></td>
-				<td>-</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold; color:gray;">Gray</td>
-				<td>8</td>
-				<td>8</td>
-				<td>10<sup>8</sup></td>
-				<td>-</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold; color:white; text-shadow:0px 0px 3px #000;">White</td>
-				<td>9</td>
-				<td>9</td>
-				<td>10<sup>9</sup></td>
-				<td>-</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold; color:gold;">Gold</td>
-				<td>-</td>
-				<td>-</td>
-				<td>10<sup>-1</sup></td>
-				<td>±5%</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold; color:silver;">Silver</td>
-				<td>-</td>
-				<td>-</td>
-				<td>10<sup>-2</sup></td>
-				<td>±10%</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<h6 class="text-header">Other Resources</h6>
-	<ul>
-		<li><a href="http://www.electronics-tutorials.ws/category/resistor">Electronics Tutorials - Resistors</a></li>
-		<li><a href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds/resistors">Adafruit - Resistors</a></li>
-		<li><a href="https://learn.sparkfun.com/tutorials/resistors/resistor-basics">Sparkfun - Resistors</a></li>
-	</ul>
-
-	<!--HEADER EXAMPLE-->
-	<!--<h6 class="text-header">Description</h6>-->
-
-	<!--IMAGE EXAMPLE-->
-
-	<!--CODE EXAMPLE-->
-	<!--<pre>
-<code>[CODE]
-[CODE]
-[CODE]</code>
-	</pre>-->
-
-	<!--FILE EXAMPLE-->
-	<!--<a href="assets/7-seg-display.ino" download>
-		<div class="download">
-			<img src="assets/download-icon.png"></img> 
-			<p>file.ext</p>
+	<!-- Primary Page Layout
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	
+	<div class="container">
+		<!-- BEGIN HEADER -->
+		<div class="row">
+			<h2 class="title">Arduino Examples</h2>
+			<hr class="abovemenu">
+			<div class="row menu" style="text-align:left;">
+				<a href="../intro.html">Intro</a> > Resistors
+			</div>
+			<hr class="belowmenu">
 		</div>
-	</a>-->
+		<!-- END HEADER -->
+
+		<!-- BEGIN CONTENT -->
+		<div class="row">
+			<h3>Intro to Resistors</h3>
+
+			<h6 class="text-header">Description</h6>
+			<p>
+				Resistors are an element of a circuit that limits the current that passes through it. They are typically used to make sure
+				that electronic components, such as LED's, don't break due to too much current or voltage. It may be hard to see that
+				resistors are necessary with simple circuits, such as just one LED, but even in this case without the proper resistor
+				the LED can overheat and stop working. The resistance of a resistor is measured in Ohms (Ω) and can be found using the
+				table and diagram below.
+			</p>
+
+			<h6 class="text-header">Resistor Color Diagram</h6>
+			<img class="u-max-full-width" src="assets/resistor-diagram.png" style="margin-bottom:10px;"></img>
+
+			<h6 class="text-header">Resistor Color Table</h6>
+			<table class="u-full-width">
+				<thead>
+					<tr>
+						<th>Color</th>
+						<th>1st Digit</th>
+						<th>2nd Digit</th>
+						<th>Multiplier</th>
+						<th>Tolerance</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="font-weight:bold; color:black;">Black</td>
+						<td>0</td>
+						<td>0</td>
+						<td>10<sup>0</sup></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold; color:brown;">Brown</td>
+						<td>1</td>
+						<td>1</td>
+						<td>10<sup>1</sup></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold; color:red;">Red</td>
+						<td>2</td>
+						<td>2</td>
+						<td>10<sup>2</sup></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold; color:orange;">Orange</td>
+						<td>3</td>
+						<td>3</td>
+						<td>10<sup>3</sup></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold; color:yellow;">Yellow</td>
+						<td>4</td>
+						<td>4</td>
+						<td>10<sup>4</sup></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold; color:green;">Green</td>
+						<td>5</td>
+						<td>5</td>
+						<td>10<sup>5</sup></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold; color:blue;">Blue</td>
+						<td>6</td>
+						<td>6</td>
+						<td>10<sup>6</sup></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold; color:violet;">Violet</td>
+						<td>7</td>
+						<td>7</td>
+						<td>10<sup>7</sup></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold; color:gray;">Gray</td>
+						<td>8</td>
+						<td>8</td>
+						<td>10<sup>8</sup></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold; color:white; text-shadow:0px 0px 3px #000;">White</td>
+						<td>9</td>
+						<td>9</td>
+						<td>10<sup>9</sup></td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold; color:gold;">Gold</td>
+						<td>-</td>
+						<td>-</td>
+						<td>10<sup>-1</sup></td>
+						<td>±5%</td>
+					</tr>
+					<tr>
+						<td style="font-weight:bold; color:silver;">Silver</td>
+						<td>-</td>
+						<td>-</td>
+						<td>10<sup>-2</sup></td>
+						<td>±10%</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h6 class="text-header">Resistor Calculator</h6>
+			<form>
+				<div class="two columns">
+					<label for="color">Colors</label>
+					<select onChange="resistor();" class="u-full-width" id="color">
+						<option value="4">4 Colors</option>
+						<option value="5">5 Colors</option>
+					</select>
+				</div>
+				<div class="two columns">
+					<label for="digit0">Digit</label>
+					<select onChange="resistor();" class="u-full-width" id="digit0">
+						<option value="0">Black</option>
+						<option value="1">Brown</option>
+						<option value="2">Red</option>
+						<option value="3">Orange</option>
+						<option value="4">Yellow</option>
+						<option value="5">Green</option>
+						<option value="6">Blue</option>
+						<option value="7">Violet</option>
+						<option value="8">Gray</option>
+						<option value="9">White</option>
+					</select>
+				</div>
+				<div class="two columns">
+					<label for="digit1">Digit</label>
+					<select onChange="resistor();" class="u-full-width" id="digit1">
+						<option value="0">Black</option>
+						<option value="1">Brown</option>
+						<option value="2">Red</option>
+						<option value="3">Orange</option>
+						<option value="4">Yellow</option>
+						<option value="5">Green</option>
+						<option value="6">Blue</option>
+						<option value="7">Violet</option>
+						<option value="8">Gray</option>
+						<option value="9">White</option>
+					</select>
+				</div>
+				<div class="two columns">
+					<label for="digit2">Digit</label>
+					<select onChange="resistor();" class="u-full-width" id="digit2">
+						<option value="0">Black</option>
+						<option value="1">Brown</option>
+						<option value="2">Red</option>
+						<option value="3">Orange</option>
+						<option value="4">Yellow</option>
+						<option value="5">Green</option>
+						<option value="6">Blue</option>
+						<option value="7">Violet</option>
+						<option value="8">Gray</option>
+						<option value="9">White</option>
+					</select>
+				</div>
+				<div class="two columns">
+					<label for="multi">Multiplier</label>
+					<select onChange="resistor();" class="u-full-width" id="multi">
+						<option value="0">Black</option>
+						<option value="1">Brown</option>
+						<option value="2">Red</option>
+						<option value="3">Orange</option>
+						<option value="4">Yellow</option>
+						<option value="5">Green</option>
+						<option value="6">Blue</option>
+						<option value="7">Violet</option>
+						<option value="8">Gray</option>
+						<option value="9">White</option>
+						<option value="-2">Silver</option>
+						<option value="-1">Gold</option>
+					</select>
+				</div>
+				<div class="two columns">
+					<label for="toler">Tolerance</label>
+					<select onChange="resistor();" class="u-full-width" id="toler">
+						<option value="5">Gold</option>
+						<option value="10">Silver</option>
+					</select>
+				</div>
+			</form>
+			<code id="result">testing</code>
+			<div style="height:10px"></div>
+
+			<script>
+				function resistor() {
+					var color = document.getElementById("color");
+					var digit0 = document.getElementById("digit0");
+					var digit1 = document.getElementById("digit1");
+					var digit2 = document.getElementById("digit2");
+					var multi = document.getElementById("multi");
+					var toler = document.getElementById("toler");
+					var result = document.getElementById("result");
+					var value = 0;
+					if (color.value == 4) {
+						digit0.setAttribute("disabled", "true");
+						value += 100 * digit0.value;
+					} else {
+						digit0.removeAttribute("disabled");
+					}
+					value += digit1.value*10;
+					value += digit2.value;
+					value *= Math.pow(10,multi.value);
+					result.innerHTML = value + "Ω ±" + toler.value + "%";
+				}
+			</script>
+
+			<h6 class="text-header">Other Resources</h6>
+			<ul>
+				<li><a href="http://www.electronics-tutorials.ws/category/resistor">Electronics Tutorials - Resistors</a></li>
+				<li><a href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds/resistors">Adafruit - Resistors</a></li>
+				<li><a href="https://learn.sparkfun.com/tutorials/resistors/resistor-basics">Sparkfun - Resistors</a></li>
+			</ul>
+
+		</div>
+		<!-- END CONTENT -->
+
+		<hr>
+
+		<!-- BEGIN FOOTER -->
+		<div class="footer">
+			<a href="https://www.github.com/willthamic"><i class="fa fa-github" aria-hidden="true"></i> Will Hamic</a>
+			<a href="https://www.github.com/samhori"><i class="fa fa-github" aria-hidden="true"></i> Sam Hori</a>
+		</div>
+		<!-- END FOOTER -->
 	</div>
 
-    <hr>
-    <div class="footer">
-      <a href="https://www.github.com/willthamic"><i class="fa fa-github" aria-hidden="true"></i> Will Hamic</a>
-      <a href="https://www.github.com/samhori"><i class="fa fa-github" aria-hidden="true"></i> Sam Hori</a>
-    </div>
-  </div>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- End Document
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
 </html>

@@ -101,3 +101,22 @@ hr.belowmenu {
 .footer {
 	text-align:center;
 }
+
+form .column,
+form .columns {
+margin-left: 2%; 
+}
+
+form .column:first-child,
+form .columns:first-child {
+margin-left: 0; 
+}
+
+form .two.columns {
+	width: 15%; 
+}
+
+form select:disabled {
+	color:lightgray;
+	border-color:#EEE;
+}
