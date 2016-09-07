@@ -51,6 +51,12 @@
           source of controllable power(such as a pin on the arduino).  Depending on the type of transistor, the transistor will only allow power from the input to output prong 
           when power is applied or not applied to the transistor
         </p>
+        <p>
+          In the picture below the 9 volt battery powers the LED.  However the arduino's pin 13 is connected to the central pin on the transistor.
+          When pin 13 is "high"(on), the transistor will allow power through.  When it is "low"(off) the LED will remain off.  This allows the 
+          arduino to avoid powering the LED directly.  This is especially useful with things that require more electricity
+          than the arduino can provide. Note that the ground of the arduino is connected to the ground of the battery.  
+        </p>
 
 
       <!--IMAGE EXAMPLE-->
